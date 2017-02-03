@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Spomenar</string>
+
+    <string name="hello">Dobrodošli u spomenar!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pregled">Pregledaj spomenar</string>
+    <string name="unesi">Unesi odgovor na pitanje: </string>
+    <string name="unesi_btn">Pošalji </string>
+    <string name="logout">Odjava</string>
+    <string name="title_activity_listanje_spomenara">Listanje Spomenara</string>
+
+    <string name="popis">Popis pitanja</string>
+    <string name="popisKorisnika">Popis Korisnika</string>
+    <string name="title_activity_popis_pitanja">Popis pitanja</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_signup">Sign up </string>
+    <string name="title_activity_popis_korisnika">PopisKorisnika</string>
+    <string name="uvod">Spomenar je nastao po uzoru na školske leksikone.
+                        Odabirom donjih ikona možete pregledati do sada zabilježene odgovore,
+                        sva pitanja i sve korisnike, a ako vam se sviđa ovo što vidite,
+                        i javiti nam se. :)</string>
+    <string name="title_activity_email">EmailActivity</string>
+    <string name="tkojeodgovorio">Tko je sve odgovorio</string>
+
+
+    <string name="logout_message">Želite li se odjaviti?</string>
+    <string name="logout_title">Odjava</string>
+    <string name="logout_ok">Da</string>
+    <string name="logout_cancel">Ne</string>
+
+    <string name="unesi_pitanje">Unesi novo pitanje: </string>
+    <string name="createAccount">Napravi račun</string>
+    <string name="lozinka">Lozinka</string>
+    <string name="prijava">Prijava</string>
+    <string name="nastaviGost">Nastavi kao gost</string>
+    <string name="ime">Ime</string>
+    <string name="alreadyMember">Već imate račun? Prijavite se. :)</string>
+    <string name="subject">Subjekt</string>
+    <string name="poruka">Poruka</string>
+    <string name="posaljiMail">Pošalji mail</string>
+    <string name="novoPitanje">Unesi pitanje</string>
+    <string name="noviOdgovor">Unesi odgovor</string>
+
+
+</resources>

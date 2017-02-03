@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/baby"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar" android:id="@+id/main_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Dobrodošli u Spomenar!"
+        android:textColor="@color/bijela"
+        android:id="@+id/dobrodosli"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:paddingTop="48dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/bijela"
+        android:text="@string/uvod"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:textSize="24sp"
+        android:paddingTop="48dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:textColor="@color/bijela"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ispis"
+        />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageButton
+            android:src="@drawable/listanje"
+            android:id="@+id/listanje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Pregled" />
+        <ImageButton
+            android:src="@drawable/pitanja"
+            android:id="@+id/pitanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Popis" />
+        <ImageButton
+            android:src="@drawable/face"
+            android:id="@+id/osobe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="PopisKorisnika" />
+        <ImageButton
+            android:src="@drawable/mail"
+            android:id="@+id/kontaktforma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="kontaktForma" />
+        <ImageButton
+            android:src="@drawable/loginout"
+            android:id="@+id/loginout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="log" />
+    </LinearLayout>
+
+</LinearLayout>

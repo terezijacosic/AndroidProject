@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hr.math.projekt.ListanjeSpomenara"
+    android:orientation="vertical"
+    android:background="@color/baby"
+    android:id="@+id/spomenar">
+
+    <include layout="@layout/toolbar" android:id="@+id/main_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/bijela"
+        android:text="Listanje"
+        android:id="@+id/listanjenaslov"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:paddingTop="24dp"
+        android:textColor="@color/bijela"
+        android:textSize="24sp"
+        android:id="@+id/pitanje"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bijela"
+        android:includeFontPadding="true"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:id="@+id/ispis"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText android:id="@+id/unesi_odg"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/noviOdgovor" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unesi_btn"
+        android:text="@string/unesi_btn"
+        android:textColor="@color/bijela"
+        android:onClick="PosaljiOdg"
+        android:visibility="gone"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <ImageButton
+            android:src="@drawable/listanje"
+            android:id="@+id/listanje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Pregled"
+            />
+
+        <ImageButton
+            android:src="@drawable/pitanja"
+            android:id="@+id/pitanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Popis"
+            />
+
+        <ImageButton
+            android:src="@drawable/face"
+            android:id="@+id/osobe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="PopisKorisnika"
+            />
+        <ImageButton
+            android:src="@drawable/mail"
+            android:id="@+id/kontaktforma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="KontaktForma"
+            />
+        <ImageButton
+            android:src="@drawable/loginout"
+            android:id="@+id/loginout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="log" />
+    </LinearLayout>
+
+</LinearLayout>
