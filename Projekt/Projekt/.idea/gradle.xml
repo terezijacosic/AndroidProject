@@ -9,8 +9,8 @@
         <option name="gradleJvm" value="1.8" />
         <option name="modules">
           <set>
-            <option value="/.home/student1/tcosic/AndroidStudioProjects/Projekt" />
-            <option value="/.home/student1/tcosic/AndroidStudioProjects/Projekt/app" />
+            <option value="/.home/student1/tcosic/Documents/android/Projekt/Projekt" />
+            <option value="/.home/student1/tcosic/Documents/android/Projekt/Projekt/app" />
           </set>
         </option>
       </GradleProjectSettings>
